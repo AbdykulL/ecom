@@ -1,0 +1,196 @@
+header{
+    display: flex ;
+    justify-content: space-between;
+    padding: 8px ;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left{
+    display: flex ;
+    gap: 50px ;
+    font-weight: bold ;
+    color: grey;
+}
+.bigimg {
+    width: 450px ;
+    height: 95%;
+    border-radius: 20px ;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 80px ;
+}
+.smimg img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.smimg{
+    display: flex ;
+    gap:20px ;
+}
+.box1{
+    display: flex ;
+    flex-direction: column;
+    gap: 20px ;
+}
+.general{
+    display: flex ;
+    gap: 90px ;
+    justify-content: center ;
+    padding: 60px;
+
+}
+.box2{
+    width: 450px ;
+    margin-top: 40px ;
+}
+.carts{
+    display: flex ;
+    gap: 5px;
+}
+.cart-ones{
+    background: rgb(238, 235, 235);
+    width: 180px;
+    padding: 7px ;
+    border-radius: 7px ;
+    display: flex;
+    justify-content: space-between;
+}
+.add-to-cart{
+    background: rgb(255, 94, 0);
+    color: black;
+    padding: 10px 90px ;
+    border: none ;
+    border-radius: 7px;
+   
+}
+
+
+
+  .burger{
+    display: none ;
+    width: 30px ;
+    height: 30px;
+  }
+
+.nav{
+    display: flex ;
+    gap: 30px ;
+}
+.card{
+    display: none ;
+}
+.card.active{
+    width: 300px ;
+    display: block;
+    background: white ;
+    box-shadow: 4px 0px 20px 2px ;
+    padding: 20px ;
+    border: none ;
+    border-radius: 10px ;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+
+
+}
+.card-content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center ;
+    padding: 15px 40px ;
+    
+}
+.remove{
+    background: orange ;
+    border: none ;
+    border-radius: 10px ;
+    padding: 10px ;
+    cursor: pointer;
+    margin-left: 230px ;
+}
+img, button{
+    cursor: pointer;
+   
+}
+img:hover{
+    opacity: 50%;
+}
+
+@media screen and (max-width:450px ) {
+    .general{
+        display: flex ;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px ;
+        gap: 2px ;
+    }
+    .nav{
+        display: none ;
+
+    }
+   
+    header{
+        z-index: 0;
+    }
+    .container{
+        padding: -0;
+    }
+    
+    .burger{
+        display: block;
+        margin-top: 15px ;
+        z-index: 2;
+    }
+    .active{
+        display: flex ;
+        flex-direction: column;
+        background: rgb(255, 255, 255) ;
+        width: 300px ;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top:0;
+        gap:30px;
+        padding-top:70px;
+        padding-left:20px;
+        z-index: 1;
+        
+    }
+    .burger-active{
+        content: url('images/Hamburger_icon.svg.png');
+      }
+      .carts{
+        display: flex ;
+        flex-direction: column;
+      }
+      .cart-ones{
+        width: 100%;
+       
+        display: flex ;
+        justify-content: space-between;
+      }
+      .card.active{
+        width: 300px ;
+        display: block;
+        background: white ;
+        box-shadow: 4px 0px 20px 2px ;
+        padding: 20px ;
+        border: none ;
+        border-radius: 10px ;
+        height: auto;
+        position: absolute;
+        left: 110px;
+        top: 70px;
+    
+    
+    }
+    .right{
+        margin-top: 12px ;
+    }
+  
+}
